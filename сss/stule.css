@@ -942,3 +942,13 @@ position: relative;
 }
 
 
+.contact-form-input:hover ~ .contact-form-svg,
+.contact-form-input:focus ~ .contact-form-svg{
+    fill: #2196F3;
+   
+}
+.contact-form-input:hover,
+.contact-form-input:focus{
+    border: 1px solid #2196F3;
+   
+}
