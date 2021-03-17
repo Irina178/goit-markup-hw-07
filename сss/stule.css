@@ -925,11 +925,11 @@ transform: translateY(-50%);
 display: block;
 position: relative;
 }
-.contact-form-svg:hover,
+/* .contact-form-svg:hover,
 .contact-form-svg:focus
  {
     fill: #2196F3;
-}
+} */
  /* Ховер и фокус иконка крестик в модалке */
 
 .button-modal-button-modal-svg
@@ -942,10 +942,3 @@ position: relative;
 }
 
 
-.contact-form-input-contact-form-svg{
-    transition:  #2196F3 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-form-input:hover .contact-form-svg,
-.contact-form-input:focus .contact-form-svg{
-    fill: #2196F3;
-}
