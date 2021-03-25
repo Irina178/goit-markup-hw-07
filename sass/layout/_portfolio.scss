@@ -1,0 +1,134 @@
+/* MAIN PORTFOLIO */
+
+.box {
+    padding-top: 80px;
+}
+
+.about-box {
+    background-attachment: var (--portfolio-back);
+}
+
+.about-box-list {
+    display: flex;
+    justify-self: center;
+    justify-content: center;   
+    margin-bottom: 50px; 
+    padding-top: 94px;
+}
+
+.about-box-list-item {
+    margin-right: 8px;
+}
+    
+.box-modal-btn:hover,
+.box-modal-btn:focus {
+    color: var (--white-color);
+    background-color: var(--primary-color);
+}
+
+.box-modal-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border:none;
+}
+
+.border-box {
+    padding-bottom: 98px;
+}
+
+.border-social-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.border-links-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;   
+}
+
+.border-links-item:hover,
+.border-links-item:focus {
+    box-shadow: var(--box-shadow)
+}
+
+.border-title-hero {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+ .border-ligh {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
+    
+.border {
+    padding: 20px 24px;
+    border: var(--border-white);
+}
+
+.function-link {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 262px;
+    text-decoration: none;
+    pointer-events: none;
+    display: block;
+}
+
+.function {
+    overflow: hidden;
+    position: relative;
+}
+
+.function-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 63px 24px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+.border-links-item:hover .function-text {
+    transform: translateY(0%);   
+}
+
+.comentar {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+    
+.comentar:hover {
+    line-height: calc(28 / 18);
+}
+    
+    
+    
+    
+      
+    

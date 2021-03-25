@@ -1,0 +1,74 @@
+    /* <!---наша команда--> */
+    .comand{
+        background-color: #F5F4FA;
+        padding: 94px 0px 94px;
+        }
+        .comand-social-links{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        }
+        .comand-links-item{
+        background: #FFFFFF;
+        justify-content:space-between;
+        flex-basis: calc(100% / 4 -30px);
+        margin-left: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        }
+        .comand-title-hero{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.187;
+        letter-spacing: 0.03em;
+        color: #212121;
+        text-align:center;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        }
+        .comand-light{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.187;
+        letter-spacing: 0.03em;
+        color: #757575;
+        text-align: center;
+        padding-bottom: 16px;
+        }
+        .ssocial-masters{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px; 
+        }    
+        
+        .social-networks-svg{
+        height: 20px;
+        width: 20px;
+        fill: #AFB1B8;
+        }
+        .social-networks{
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         }
+        .social-networks:hover,
+        .social-networks:focus{
+        background-color: #2196F3;
+        }   
+        .social-networks:hover .social-networks-svg{
+        fill: #FFFFFF;
+        }
+        .social-networks:focus .social-networks-svg{
+        fill: #FFFFFF;
+        }
+        .networks:not(:first-child){
+         margin-left: 10px;
+        }
