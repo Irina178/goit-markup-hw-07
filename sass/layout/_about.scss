@@ -2,15 +2,17 @@
     margin-top: 80px;
     height: 600px;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mein/fon.jpg);
-    }
-    .container-about{
+}
+
+.container-about {
     width: 1200px;
     height: 600px;
     padding: 0 15px;
     margin: 0 auto;
-    }
-    .about-title{
-    font-family: Roboto;
+}
+
+.about-title {
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -21,9 +23,9 @@
     padding-top: 200px;
     text-align: center;
     padding-bottom: 30px;
-    }
-    .modal-btn{
-    font-family: Roboto;
+}
+
+.modal-btn {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -40,26 +42,28 @@
     padding: 10px 32px;
     margin-bottom: 200px;
     border:none;
-    }
+}
+
     /* <!---функции--> */
-.about-function{
+.about-function {
     background-color: #FFFFFF;
     padding-top: 94px;
-    }
-    .about-list{
+}
+
+.about-list {
     display: flex;
-    /* flex-wrap: wrap; */
     margin-left: -30px;
     margin-top: -30px; 
-    }
-    .about-list-item{
+}
+
+.about-list-item {
     justify-content:space-between;
     flex-basis: calc(100% / 4 -30px);
     margin-left: 30px;
     margin-top: 30px;
-    }
+}
     
-    .icon {
+.icon {
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -70,10 +74,9 @@
     border-radius: 4px;
     text-align: center;
     padding: 25px 100px;
-    }
+}
     
-    .title{
-    font-family: Roboto;
+.title {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -82,14 +85,12 @@
     text-transform: uppercase;
     color: #212121;
     padding-bottom: 10px;
-    }
+}
     
-     .subtitle-light-theme{
-    font-family: Roboto;
+.subtitle-light-theme {
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
-    }
+}

@@ -1,6 +1,6 @@
 /* modal */
 
-.backdrop{
+.backdrop {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -10,27 +10,30 @@
     left: 0px;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.2);
-    }
+}
         
-    .backdrop.is-hidden{
+.backdrop.is-hidden {
     visibility: hidden;
     appearance: none;
-    }
-    .modal{
+}
+
+.modal {
     position: fixed;
     margin: 0 auto;
     width: 528px;
     height: 581px;
-    background: #FFFFFF;
+    background:var(--back-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-    }
-    .modal.is-hidden{
+}
+
+.modal.is-hidden {
     display: 0;
     pointer-events: none;
-    }
-    .button-modal{
+}
+
+.button-modal {
     width: 30px;
     height: 30px;
     background: #FFFFFF;
@@ -40,31 +43,32 @@
     right: 8px;
     top: 8px;
     border-radius: 100%;   
-    }
+}
         
-    .button-modal-svg{
+.button-modal-svg {
     height: 11px;
     width: 11px;
     fill: #AFB1B8;
-    }
-    .button-modal-svg:hover{
+}
+
+.button-modal-svg:hover {
     fill: #2196F3;
-    }
-    .button-modal-svg:focus{
+}
+
+.button-modal-svg:focus {
      fill: #2196F3;
-    }
+}
     
-    .button-modal-button-modal-svg
-    {
+.button-modal-button-modal-svg {
     transition:  #2196F3 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .button-modal:hover .button-modal-svg,
-    .button-modal:focus .button-modal-svg{
+}
+
+.button-modal:hover .button-modal-svg,
+.button-modal:focus .button-modal-svg {
         fill: #2196F3; 
-    }
+}
     
-    .modal-text{
-    font-family: Roboto;
+.modal-text {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -73,20 +77,22 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin: 2px;
-    }
-    .form__name{
-    font-family: Roboto;
+}
+
+.form__name {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #757575;
-    }
-    .modal-form-wraper{ 
+}
+
+.modal-form-wraper { 
     display: block;
     position: relative;
-    }
-    .contact-form-input{
+}
+
+.contact-form-input {
     display: block;
     width: 448px;
     height: 40px;
@@ -98,33 +104,35 @@
     padding: 0 32px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: none;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height:1.666px;
     letter-spacing: 0.01em;
-    }
-    .contact-form-input:hover ~ .contact-form-svg,
-    .contact-form-input:focus ~ .contact-form-svg{
+}
+
+.contact-form-input:hover ~ .modal-form-svg,
+.contact-form-input:focus ~ .modal-form-svg{
     fill: #2196F3;
        
-    }
+}
     .contact-form-input:hover,
-    .contact-form-input:focus{
+    .contact-form-input:focus {
     border: 1px solid #2196F3;   
-    }
+}
     
-    .contact-form-svg{
+.backdrop .modal-form-svg {
     position: absolute;
-    fill: #212121;
+    // fill: #212121;
+    fill: currentColor;
     width: 12px;
     height: 12px;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    }
-    .contact-form-masseger{
+}
+
+.contact-form-masseger {
     width: 448px;
     height: 120px;
     left: 576px;
@@ -136,12 +144,14 @@
     resize: none;
     margin: 4px 0px 20px;
     outline: none;
-    } 
-    .contact-form-masseger:hover,
-    .contact-form-masseger:focus{
+} 
+
+.contact-form-masseger:hover,
+.contact-form-masseger:focus {
     border-color:#188CE8;
-    }
-    .checkbox-label {
+}
+
+.checkbox-label {
     display: flex;
     align-items: center;
     padding-left: 12px;
@@ -149,30 +159,35 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    }
-    .modal-form-conditions{
+}
+
+.modal-form-conditions {
     color: #2196F3;
     text-decoration: underline;
     padding-left: 5px;
-    }
-    .check-icon{
+}
+
+.check-icon {
     display: inline-block;
-     border: 2px solid black;
+    border: 2px solid black;
     border-radius: 4px;
     width: 16px;
     height: 15px;
     transition: fill 250ms var(--cubic), border 250ms var(--cubic), background-color 250ms var(--cubic), 
-    }
-    .check-icon use{
+}
+
+.check-icon use {
     display: none;
-    }
-    .check-icon :hover{
-     border: none;
-    }
-    .check-icon :hover use{
+}
+
+.check-icon :hover {
+    border: none;
+}
+
+.check-icon :hover use {
     display: block;
-    }
-     .checkbox {
+}
+.checkbox {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -181,20 +196,21 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-    }
-    .checkbox-icon {
+}
+
+.checkbox-icon {
     display: inline-block;
     border: 2px solid black;
     border-radius: 4px;
     width: 16px;
     height: 15px;
     margin-right: 8px;
-    }
-    .contact-form-btn{
+}
+
+.contact-form-btn {
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -207,9 +223,10 @@
     padding: 10px 55px;
     margin: 0 auto;
     margin-top: 30px;
-    }
-    .contact-form-btn:hover,
-    .contact-form-btn:focus{
+}
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
     background: #188CE8;
     border-color: rgba(0, 0, 0, 0.12);
-    }
+}
