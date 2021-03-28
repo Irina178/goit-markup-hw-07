@@ -1,7 +1,7 @@
 /* header */
 
 .header {
-  background-color: $white-colo;
+  background-color: $white-color;
   border-bottom: $border-white;
   position: fixed;
   width: 100%;
@@ -36,6 +36,7 @@
 .navigation-list {
   display: flex;
   margin-right: 275px;
+  margin-left: 93px;
 }
 
 .navigation-list li:nth-child(2) {
@@ -44,8 +45,8 @@
   padding: 0;
 }
 
-.navigation-list-link :hover,
-.navigation-list-link :focus {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: $primary-color;
 }
 
@@ -86,13 +87,13 @@
 }
 
 .logo {
+  display: flex;
   font-family: $pretty-font;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: $primary-color;
-  margin-right: 93px;
 }
 
 /* ховер тел почта иконки */
@@ -124,7 +125,7 @@
 
 ul.communication li:hover a,
 ul.communication li a:focus {
-  color: $primary-color3;
+  color: $primary-color;
 }
 ul.communication li:hover a .communication-icon,
 ul.communication li a:focus .communication-icon {

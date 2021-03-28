@@ -1,7 +1,7 @@
 .about {
   margin-top: 80px;
   height: 600px;
-  background-image: background-image;
+  background-image: $background-image;
 }
 
 .container-about {
@@ -65,7 +65,7 @@
 .icon {
   width: 270px;
   height: 120px;
-  background: $white-color;
+  background: $icon-back;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;

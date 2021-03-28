@@ -2,14 +2,16 @@
   background-color: $footer-back;
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 252px;
 }
 
 .flex {
   display: flex;
+  justify-content: space-between;
 }
 
-.title-adres {
-  margin-right: 50px;
+.title-adress {
+  margin-right: 70px;
   display: inline-block;
 }
 
@@ -68,9 +70,9 @@
 }
 
 /* Подпишитесь на рассылку */
-.subscription-form {
-  width: 670px;
-}
+// .subscription-form {
+  // width: 670px;
+// }
 
 .subscription-email {
   width: 358px;
