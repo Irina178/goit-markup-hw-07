@@ -811,7 +811,6 @@ ul.communication li a:focus .communication-icon {
 
 .check-icon {
   display: inline-block;
-  border: 2px solid black;
   border-radius: 4px;
   width: 16px;
   height: 15px;
@@ -823,28 +822,12 @@ ul.communication li a:focus .communication-icon {
   display: none;
 }
 
-.check-icon :hover {
-  border: none;
-}
-
-.check-icon :hover use {
-  display: block;
-}
-
 .checkbox {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .checkbox-icon {
-  display: inline-block;
-  border: 2px solid black;
+  position: relative;
   border-radius: 4px;
   width: 16px;
   height: 15px;
@@ -878,6 +861,11 @@ ul.communication li a:focus .communication-icon {
 .contact-form-btn:focus {
   background: #2196f3;
   border-color: rgba(0, 0, 0, 0.12);
+}
+
+.checkbox:checked .check-icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 /* MAIN PORTFOLIO */

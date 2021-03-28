@@ -167,7 +167,7 @@
 
 .check-icon {
   display: inline-block;
-  border: $check;
+  // border: $check;
   border-radius: 4px;
   width: 16px;
   height: 15px;
@@ -179,27 +179,25 @@
   display: none;
 }
 
-.check-icon :hover {
-  border: none;
-}
+// .check-icon:hover {
+//   border: none;
+// }
 
-.check-icon :hover use {
-  display: block;
-}
+// .check-icon:hover use {
+//   display: block;
+// }
 .checkbox {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  // width: 16px;
+  // height: 15px;
+  // border-radius: 4px;
+  // padding: 0;
 }
 
 .checkbox-icon {
-  display: inline-block;
-  border: $check;
+  // display: inline-block;
+  // border: $check;
+  position: relative;
   border-radius: 4px;
   width: 16px;
   height: 15px;
@@ -228,4 +226,15 @@
 .contact-form-btn:focus {
   background: $primary-color;
   border-color: $contact-form;
+}
+.checkbox:checked .check-icon{
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+.check-icon {
+  // display: inline-flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 16px;
+  // height: 16px;
 }
