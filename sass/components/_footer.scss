@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   height: 252px;
-  &p {
+  & p {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -11,8 +11,8 @@
     color: $white-color;
     padding-bottom: 20px;
   }
-  &.social-networks:hover,
-  &.social-networks-svg-footer {
+  & .social-networks:hover,
+  & .social-networks-svg-footer {
     fill: $white-color;
   }
 }

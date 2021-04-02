@@ -19,7 +19,7 @@
   margin-left: -30px;
   margin-top: -30px;
   justify-content: center;
-  &li {
+  & li {
     width: 170px;
     height: 90px;
     background: $white-color;
@@ -30,7 +30,7 @@
     margin: 30px 15px 0px;
     fill: $button-svg;
     &:hover a .logo-svg,
-    &a:focus .logo-svg {
+    & a:focus .logo-svg {
       fill: $primary-color;
     }
   }
@@ -43,7 +43,7 @@
   margin-left: 30px;
   margin-top: 30px;
   width: 170px;
-  &a {
+   & a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,7 +54,7 @@
     box-sizing: border-box;
     outline: none;
   }
-  &a:hover,
+  & a:hover,
   &:focus {
     border-color: $primary-color;
   }

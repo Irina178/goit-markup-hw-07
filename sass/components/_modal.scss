@@ -14,7 +14,7 @@
     visibility: hidden;
     appearance: none;
   }
-  &.modal-form-svg {
+  & .modal-form-svg {
     position: absolute;
     fill: $text-color;
     fill: currentColor;
@@ -162,7 +162,7 @@
   height: 15px;
   transition: fill 250ms var(--cubic), border 250ms var(--cubic),
     background-color 250ms var(--cubic);
-  &use {
+  & use {
     display: none;
   }
 }
