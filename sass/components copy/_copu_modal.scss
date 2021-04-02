@@ -179,6 +179,7 @@
   display: none;
 }
 
+
 .checkbox {
   position: absolute;
 }
@@ -214,14 +215,14 @@
   background: $primary-color;
   border-color: $contact-form;
 }
-.checkbox:checked .check-icon {
+.checkbox:checked .check-icon{
   background-color: $primary-color;
   border-color: $primary-color;
 }
 .check-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 16px;
+  // display: inline-flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 16px;
+  // height: 16px;
 }

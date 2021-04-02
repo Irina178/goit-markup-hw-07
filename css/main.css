@@ -322,9 +322,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 450px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* header */
@@ -866,6 +883,20 @@ ul.communication li a:focus .communication-icon {
 .checkbox:checked .check-icon {
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+.check-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 16px;
 }
 
 /* MAIN PORTFOLIO */
