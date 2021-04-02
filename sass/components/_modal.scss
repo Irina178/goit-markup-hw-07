@@ -10,11 +10,20 @@
   left: 0px;
   top: 0px;
   background-color: $back-color;
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  appearance: none;
+  &.is-hidden {
+    visibility: hidden;
+    appearance: none;
+  }
+  &.modal-form-svg {
+    position: absolute;
+    fill: $text-color;
+    fill: currentColor;
+    width: 12px;
+    height: 12px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .modal {
@@ -26,11 +35,10 @@
   box-shadow: $white-color;
   border-radius: 4px;
   padding: 40px;
-}
-
-.modal.is-hidden {
-  display: 0;
-  pointer-events: none;
+  &.is-hidden {
+    display: 0;
+    pointer-events: none;
+  }
 }
 
 .button-modal {
@@ -43,29 +51,24 @@
   right: 8px;
   top: 8px;
   border-radius: 100%;
+  &:hover .button-modal-svg,
+  &:focus .button-modal-svg {
+    fill: $primary-color;
+  }
 }
 
 .button-modal-svg {
   height: 11px;
   width: 11px;
   fill: $button-svg;
-}
-
-.button-modal-svg:hover {
-  fill: $primary-color;
-}
-
-.button-modal-svg:focus {
-  fill: $primary-color;
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
 }
 
 .button-modal-button-modal-svg {
   transition: $primary-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-modal:hover .button-modal-svg,
-.button-modal:focus .button-modal-svg {
-  fill: $primary-color;
 }
 
 .modal-text {
@@ -109,26 +112,14 @@
   font-size: 12px;
   line-height: 1.666px;
   letter-spacing: 0.01em;
-}
-
-.contact-form-input:hover ~ .modal-form-svg,
-.contact-form-input:focus ~ .modal-form-svg {
-  fill: $primary-color;
-}
-.contact-form-input:hover,
-.contact-form-input:focus {
-  border: $border-blue;
-}
-
-.backdrop .modal-form-svg {
-  position: absolute;
-  fill: $text-color;
-  fill: currentColor;
-  width: 12px;
-  height: 12px;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  &:hover ~ .modal-form-svg,
+  &:focus ~ .modal-form-svg {
+    fill: $primary-color;
+  }
+  &:hover,
+  &:focus {
+    border: $border-blue;
+  }
 }
 
 .contact-form-masseger {
@@ -143,11 +134,10 @@
   resize: none;
   margin: 4px 0px 20px;
   outline: none;
-}
-
-.contact-form-masseger:hover,
-.contact-form-masseger:focus {
-  border-color: $primary-color;
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
 }
 
 .checkbox-label {
@@ -167,23 +157,28 @@
 
 .check-icon {
   display: inline-block;
-  // border: $check;
   border-radius: 4px;
   width: 16px;
   height: 15px;
   transition: fill 250ms var(--cubic), border 250ms var(--cubic),
     background-color 250ms var(--cubic);
-}
-
-.check-icon use {
-  display: none;
+  &use {
+    display: none;
+  }
 }
 
 .checkbox {
   position: absolute;
+  &:checked .check-icon {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
 }
 
 .checkbox-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   border-radius: 4px;
   width: 16px;
@@ -207,21 +202,9 @@
   padding: 10px 55px;
   margin: 0 auto;
   margin-top: 30px;
-}
-
-.contact-form-btn:hover,
-.contact-form-btn:focus {
-  background: $primary-color;
-  border-color: $contact-form;
-}
-.checkbox:checked .check-icon {
-  background-color: $primary-color;
-  border-color: $primary-color;
-}
-.check-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 16px;
+  &:hover,
+  &:focus {
+    background: $primary-color;
+    border-color: $contact-form;
+  }
 }

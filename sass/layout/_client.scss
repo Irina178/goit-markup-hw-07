@@ -19,6 +19,21 @@
   margin-left: -30px;
   margin-top: -30px;
   justify-content: center;
+  &li {
+    width: 170px;
+    height: 90px;
+    background: $white-color;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 0px;
+    fill: $button-svg;
+    &:hover a .logo-svg,
+    &a:focus .logo-svg {
+      fill: $primary-color;
+    }
+  }
 }
 
 .clients-icon-logo {
@@ -28,54 +43,27 @@
   margin-left: 30px;
   margin-top: 30px;
   width: 170px;
-}
-
-.clients-icon-logo a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: $clients-border;
-  border-radius: 4px;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.clients-icon li {
-  width: 170px;
-  height: 90px;
-  background: $white-color;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 15px 0px;
-  fill: $button-svg;
+  &a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: $clients-border;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  &a:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
 }
 
 .logo-svg {
   fill: $button-svg;
+  &:hover .logo-svg {
+    fill: $primary-color;
+  }
 }
 
-.icon-svg:hover .logo-svg {
-  fill: $primary-color;
-}
-
-/* ХОВЕР ПОСТОЯННЫЕ КЛИЕНТЫ */
-.clients-icon-logo a:hover {
-  border-color: $primary-color;
-}
-
-ul.clients-icon li:hover a .logo-svg {
-  fill: $primary-color;
-}
-
-/* фокус ПОСТОЯННЫЕ КЛИЕНТЫ */
-ul.clients-icon li a:focus .logo-svg {
-  fill: $primary-color;
-}
-
-.clients-icon-logo a:focus {
-  border-color: $primary-color;
-}

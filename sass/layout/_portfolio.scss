@@ -20,13 +20,6 @@
   margin-right: 8px;
 }
 
-
-.box .box-modal-btn:hover,
-.box .box-modal-btn:focus {
-  color: $white-color;
-  background-color: $primary-color;
-}
-
 .box .box-modal-btn {
   font-weight: 500;
   font-size: 16px;
@@ -37,6 +30,11 @@
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $primary-color;
+  }
 }
 
 .border-box {
@@ -57,11 +55,13 @@
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.border-links-item:hover,
-.border-links-item:focus {
-  box-shadow: $box-shadow;
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+  &:hover .function-text {
+    transform: translateY(0%);
+  }
 }
 
 .border-title-hero {
@@ -109,9 +109,6 @@
   transform: translateY(100%);
   transition: 0.3s;
 }
-.border-links-item:hover .function-text {
-  transform: translateY(0%);
-}
 
 .comentar {
   font-style: normal;
@@ -119,8 +116,7 @@
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: $white-color;
-}
-
-.comentar:hover {
-  line-height: calc(28 / 18);
+  &:hover {
+    line-height: calc(28 / 18);
+  }
 }
